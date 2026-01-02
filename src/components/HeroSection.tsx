@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main heading - Red like business card */}
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold mb-3 opacity-0 animate-fade-up text-accent">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-sans font-bold mb-3 opacity-0 animate-fade-up text-accent uppercase tracking-wide">
             PROFESSOR ANDREW SSEMWANGA
           </h1>
 
