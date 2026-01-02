@@ -45,10 +45,8 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/10 to-transparent" />
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="experience" className="py-24 bg-secondary/30">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-wider text-sm uppercase mb-4 block">
             Professional Journey
@@ -76,7 +74,7 @@ const ExperienceSection = () => {
 
                 {/* Content */}
                 <div className={`md:w-1/2 pl-8 md:pl-0 ${index % 2 === 0 ? "md:pl-12" : "md:pr-12 md:text-right"}`}>
-                  <div className="glass-card p-6 rounded-xl hover-lift">
+                  <div className="light-card p-6 rounded-lg hover-lift">
                     <span className="text-primary font-medium text-sm">{exp.period}</span>
                     <h3 className="text-lg font-serif font-semibold text-foreground mt-2 mb-1">
                       {exp.role}

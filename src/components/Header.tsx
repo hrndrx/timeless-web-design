@@ -13,10 +13,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <a href="#" className="text-xl font-serif font-semibold text-primary">
+          <a href="#" className="text-xl font-serif font-bold text-gold">
             Prof. Ssemwanga
           </a>
 
@@ -26,7 +26,7 @@ const Header = () => {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium tracking-wide"
+                  className="text-foreground hover:text-primary transition-colors duration-300 text-sm font-medium tracking-wide"
                 >
                   {link.label}
                 </a>
@@ -46,13 +46,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border/30 pt-4 animate-fade-in">
+          <div className="md:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">
             <ul className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
+                    className="text-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.label}

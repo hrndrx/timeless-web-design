@@ -41,7 +41,7 @@ const PublicationsSection = () => {
   ];
 
   return (
-    <section id="publications" className="py-24 relative">
+    <section id="publications" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-wider text-sm uppercase mb-4 block">
@@ -57,7 +57,7 @@ const PublicationsSection = () => {
           {publications.map((pub, index) => (
             <div
               key={index}
-              className="glass-card p-6 rounded-xl hover-lift group"
+              className="light-card p-6 rounded-lg hover-lift group"
             >
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
