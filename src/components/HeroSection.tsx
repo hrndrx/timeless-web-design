@@ -1,13 +1,6 @@
 import { Award, BookOpen, Briefcase, GraduationCap } from "lucide-react";
 
 const HeroSection = () => {
-  const credentials = [
-    "PhD in Corporate Governance",
-    "Doctor of Management",
-    "MBA – Financial Management",
-    "B.Com – Accounting",
-  ];
-
   const stats = [
     { icon: Briefcase, value: "40+", label: "Years Experience" },
     { icon: GraduationCap, value: "5+", label: "Universities Led" },
@@ -16,39 +9,27 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20" />
-      
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-float animation-delay-300" />
-
+    <section className="relative min-h-screen flex items-center justify-center pt-20 bg-background">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Title badge */}
-          <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-8 opacity-0 animate-fade-up">
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-sm text-muted-foreground font-medium tracking-wide">
-              Consultant • Researcher • Trainer
-            </span>
-          </div>
-
-          {/* Main heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 opacity-0 animate-fade-up animation-delay-100">
-            <span className="text-foreground">Professor</span>
-            <br />
-            <span className="text-gradient-gold">Andrew Ssemwanga</span>
+          {/* Main heading - Gold like business card */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-4 opacity-0 animate-fade-up text-gold">
+            PROFESSOR ANDREW SSEMWANGA
           </h1>
 
           {/* Credentials */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-4 opacity-0 animate-fade-up animation-delay-200">
-            PhD, Doc. of Mngt, MBA, B.COM, FFA, FIPA, FIFC, MFC, CFC, MCIEA
+          <p className="text-base md:text-lg text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-100">
+            (PhD, Doc. of Mngt, MBA, B.COM, FFA, FIPA, FIFC, MFC, CFC, MCIEA)
           </p>
 
+          {/* Role - Bold like business card */}
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-6 opacity-0 animate-fade-up animation-delay-200">
+            CONSULTANT / RESEARCHER / TRAINER
+          </h2>
+
           {/* Description */}
-          <p className="text-base md:text-lg text-muted-foreground/80 max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up animation-delay-300">
-            Expert in Corporate Governance, Finance, Accounting, Institutional Evaluation,
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up animation-delay-300">
+            Corporate Governance, Finance, Accounting, Institutional Evaluation Programme,
             Due Diligence Assessment and Higher Education
           </p>
 
@@ -56,13 +37,13 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 opacity-0 animate-fade-up animation-delay-400">
             <a
               href="#contact"
-              className="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover-lift gold-glow"
+              className="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded hover-lift"
             >
               Get in Touch
             </a>
             <a
               href="#expertise"
-              className="px-8 py-4 glass-card text-foreground font-semibold rounded-lg hover-lift border border-primary/20"
+              className="px-8 py-4 border-2 border-foreground text-foreground font-semibold rounded hover-lift hover:bg-foreground hover:text-background transition-colors"
             >
               View Expertise
             </a>
@@ -73,7 +54,7 @@ const HeroSection = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="glass-card p-6 rounded-xl hover-lift"
+                className="light-card p-6 rounded-lg hover-lift"
               >
                 <stat.icon className="w-8 h-8 text-primary mx-auto mb-3" />
                 <div className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-1">
@@ -83,13 +64,6 @@ const HeroSection = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-primary rounded-full animate-pulse" />
         </div>
       </div>
     </section>

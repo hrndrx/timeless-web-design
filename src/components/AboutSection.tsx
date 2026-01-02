@@ -19,10 +19,8 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary/10 to-transparent" />
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="about" className="py-24 bg-secondary/50">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
             About Professor Ssemwanga
@@ -32,7 +30,7 @@ const AboutSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Bio Card */}
-          <div className="glass-card-strong p-8 rounded-2xl hover-lift">
+          <div className="light-card p-8 rounded-lg hover-lift">
             <h3 className="text-xl font-serif font-semibold text-primary mb-6">
               Professional Profile
             </h3>
@@ -70,7 +68,7 @@ const AboutSection = () => {
           {/* Memberships & Roles */}
           <div className="space-y-8">
             {/* Professional Memberships */}
-            <div className="glass-card p-8 rounded-2xl hover-lift">
+            <div className="light-card p-8 rounded-lg hover-lift">
               <h3 className="text-xl font-serif font-semibold text-primary mb-6">
                 Professional Memberships
               </h3>
@@ -88,7 +86,7 @@ const AboutSection = () => {
             </div>
 
             {/* Current Roles */}
-            <div className="glass-card p-8 rounded-2xl hover-lift">
+            <div className="light-card p-8 rounded-lg hover-lift">
               <h3 className="text-xl font-serif font-semibold text-primary mb-6">
                 Current Affiliations
               </h3>

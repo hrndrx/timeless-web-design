@@ -42,11 +42,8 @@ const ExpertiseSection = () => {
   ];
 
   return (
-    <section id="expertise" className="py-24 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent" />
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="expertise" className="py-24 bg-background">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-wider text-sm uppercase mb-4 block">
             Areas of Specialization
@@ -65,9 +62,9 @@ const ExpertiseSection = () => {
           {expertiseAreas.map((area, index) => (
             <div
               key={index}
-              className="glass-card p-8 rounded-2xl hover-lift group cursor-default"
+              className="light-card p-8 rounded-lg hover-lift group cursor-default"
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+              <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
                 <area.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold text-foreground mb-4">
