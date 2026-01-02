@@ -12,18 +12,18 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center pt-20 bg-background">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Main heading - Gold like business card */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-4 opacity-0 animate-fade-up text-gold">
+          {/* Main heading - Red like business card */}
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold mb-3 opacity-0 animate-fade-up text-accent">
             PROFESSOR ANDREW SSEMWANGA
           </h1>
 
           {/* Credentials */}
-          <p className="text-base md:text-lg text-muted-foreground mb-8 opacity-0 animate-fade-up animation-delay-100">
+          <p className="text-sm md:text-base text-muted-foreground mb-6 opacity-0 animate-fade-up animation-delay-100">
             (PhD, Doc. of Mngt, MBA, B.COM, FFA, FIPA, FIFC, MFC, CFC, MCIEA)
           </p>
 
-          {/* Role - Bold like business card */}
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-6 opacity-0 animate-fade-up animation-delay-200">
+          {/* Role - Bold sans-serif blue like business card */}
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-sans font-bold text-[hsl(220,60%,25%)] mb-6 opacity-0 animate-fade-up animation-delay-200 tracking-wide">
             CONSULTANT / RESEARCHER / TRAINER
           </h2>
 
