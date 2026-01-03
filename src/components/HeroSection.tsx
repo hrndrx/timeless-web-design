@@ -18,7 +18,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Credentials */}
-          <p className="text-sm md:text-base text-muted-foreground mb-6 opacity-0 animate-fade-up animation-delay-100">
+          <p className="text-sm md:text-base text-foreground font-bold mb-6 opacity-0 animate-fade-up animation-delay-100">
             (PhD, Doc. of Mngt, MBA, B.COM, FFA, FIPA, FIFC, MFC, CFC, MCIEA)
           </p>
 
@@ -28,7 +28,7 @@ const HeroSection = () => {
           </h2>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up animation-delay-300">
+          <p className="text-base md:text-lg text-foreground font-bold max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up animation-delay-300">
             Corporate Governance, Finance, Accounting, Institutional Evaluation Programme,
             Due Diligence Assessment and Higher Education
           </p>
