@@ -13,17 +13,17 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main heading - Red like business card */}
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-sans font-bold mb-3 opacity-0 animate-fade-up text-accent uppercase tracking-wide">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 opacity-0 animate-fade-up text-accent uppercase tracking-[0.15em]" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
             PROFESSOR ANDREW SSEMWANGA
           </h1>
 
           {/* Credentials */}
-          <p className="text-sm md:text-base text-foreground font-bold mb-6 opacity-0 animate-fade-up animation-delay-100">
+          <p className="text-sm md:text-base text-foreground font-bold mb-6 opacity-0 animate-fade-up animation-delay-100" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
             (PhD, Doc. of Mngt, MBA, B.COM, FFA, FIPA, FIFC, MFC, CFC, MCIEA)
           </p>
 
           {/* Role - Bold sans-serif blue like business card */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-sans font-bold text-[hsl(220,60%,25%)] mb-6 opacity-0 animate-fade-up animation-delay-200 tracking-wide">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(220,60%,25%)] mb-6 opacity-0 animate-fade-up animation-delay-200 tracking-[0.1em] italic" style={{ fontFamily: "'Playfair Display', serif" }}>
             CONSULTANT / RESEARCHER / TRAINER
           </h2>
 
