@@ -12,8 +12,8 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center pt-20 bg-background">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Main heading - Red italic serif like business card */}
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 opacity-0 animate-fade-up text-accent uppercase tracking-wide italic" style={{ fontFamily: "'Playfair Display', serif" }}>
+          {/* Main heading - Red bold sans-serif like business card */}
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 opacity-0 animate-fade-up text-accent uppercase tracking-wide" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
             PROFESSOR ANDREW SSEMWANGA
           </h1>
 
